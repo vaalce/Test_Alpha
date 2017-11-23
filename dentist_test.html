@@ -1,0 +1,59 @@
+<style>
+body {background-color: powderblue;}
+h1{color:black;}
+p{color:white;}
+
+div {
+position: absolute;
+background-color: lightgrey;
+width: 400px;
+Padding:25px;
+border: 50px lightgrey;
+margin:100px 0 0 150px;
+z-index: 15;
+top: 50%
+left: 50%
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="test">
+<h2>First Name:
+<input type="text" id="myText" value="">
+<input type="button" value="Search" onclick="Fname()"></h2>
+<script>
+function Fname() {
+    var x = document.getElementById("myText").value;
+   window.location.href ='http://137.74.113.218:3000/search?key=first_name&value='+x;
+ }
+</script>
+
+<h2>Last Name
+<input type="text" id="myText1" value="">
+<input type="button" value="Search" onclick="Lname()"></h2>
+<script>
+function Lname() {
+    var y = document.getElementById("myText1").value;
+   window.location.href ='http://137.74.113.218:3000/search?key=last_name&value='+y;
+ }
+</script>
+
+
+<h2>City
+
+<input type="text" id="myText2" value="">
+<input type="button" value="Search" onclick="City()"></h2>
+<script>
+function City() {
+    var z = document.getElementById("myText2").value;
+   window.location.href ='http://137.74.113.218:3000/search?key=city&value='+z;
+ }
+</script>
+</div>
+
+
+</body>
+</html>
